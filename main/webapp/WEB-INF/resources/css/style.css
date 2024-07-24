@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Lato:ital,wght@1,300&display=swap');
+
+:root {
+    --main-bg-color: rgb(55, 0, 55);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-button {
+    margin: 7vh;
+    padding: 7vh;
+}
+
+.header {
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 12vh;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(6, 6, 90);
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.search input {
+    height: 27px;
+    width: 30vw;
+    border-radius: 5px;
+    padding: 0 12px;
+    margin-right: 8px;
+}
+
+.search button {
+    font-family: 'Lato', sans-serif;
+}
+
+.search button:hover {
+    font-size: large;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    width: 200%; /* Double the width for seamless scrolling */
+    animation: scroll 15s linear infinite;
+}
+
+.slider-track img {
+    width: 50%; /* Each image takes half of the track width */
+    display: block;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Move by half the track width */
+}
+
+.slider img {
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.container {
+    margin-top: 12vh;
+    padding: 20px;
+    height: calc(100vh - 12vh - 58px);
+    overflow-y: auto;
+}
+
+footer {
+    height: 58px;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.cards {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align items to the start for scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 91vw;
+    margin: auto;
+}
+
+.card {
+    max-height: 400px;
+    overflow: hidden; /* Prevent scrolling on individual cards */
+}
+
+.cards .card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.cards .card-item img {
+    height: 30vh;
+    width: 30vh;
+    object-fit: cover; /* Ensure the images fit within the container */
+}
+
+.cards .card-item:hover {
+    font-weight: bold;
+}
+.nav-buttons form {
+    display: inline;
+    margin-right: 10px; /* Adjust the gap between buttons */
+}
+
+.cart-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds space between the icon and the text */
+}
+
+.cart-button:hover {
+    background-color: darkgreen;
+}
+
+.cart-icon {
+    width: 1px; 
+    height: 1px;
+}

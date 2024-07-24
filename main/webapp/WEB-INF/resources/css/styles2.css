@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search {
+    margin-top: 1rem;
+}
+
+.search input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.search .btn {
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.banner.contact-banner {
+    background-image: url('../image/contact-banner.jpg'); /* Replace with your contact banner image */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+    z-index: 0;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.contact-content {
+    padding: 2rem 1rem;
+    text-align: left;
+}
+
+.contact-content h2 {
+    margin-top: 2rem;
+}
+
+.contact-content p {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Add other styles as needed */
